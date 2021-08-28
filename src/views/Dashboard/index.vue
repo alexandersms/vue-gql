@@ -1,5 +1,5 @@
 <template>
-  <div class="authentication">
+  <div class="dashboard">
     <routerView />
   </div>
 </template>
