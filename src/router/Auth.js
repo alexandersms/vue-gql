@@ -4,6 +4,7 @@ export default {
   path: "/auth",
   name: "Authentication",
   component: AuthView,
+  redirect: '/auth/login',
   children: [
     {
       path: "login",

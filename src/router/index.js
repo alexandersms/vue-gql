@@ -1,25 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "@/views/Home.vue";
 import AuthRoutes from "./Auth";
 import DashboardRoutes from "./Dashboard";
+import PublicRoutes from "./Public";
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: () => import("@/views/About.vue"),
-  },
-  AuthRoutes,
-  DashboardRoutes,
-];
+const routes = [AuthRoutes, DashboardRoutes, ...PublicRoutes];
 
 const router = new VueRouter({
   mode: "history",

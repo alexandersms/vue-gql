@@ -4,6 +4,7 @@ export default {
   path: "/dashboard",
   name: "Dashboard",
   component: DashboardView,
+  redirect: '/dashboard/posts',
   children: [
     {
       path: "profile",
